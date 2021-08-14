@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    grid-template-areas: "item_3 item_1 nav" "item_3 item_2 advert" ;
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.item_1 {
+    background-color: blue;
+    grid-area: item_3;
+}
+.item_2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0,0,0,1)20%, rgba(121,9,9,1) 100%);
+    grid-area: item_1;
+}
+.item_3 {
+    grid-area: item_2;
+    background: url('./img_1.jpg') ;
+}
+.item_3 > p {
+    font-size: 50px;
+}
+
+.item {
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
